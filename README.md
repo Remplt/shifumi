@@ -1,8 +1,7 @@
 # Site qui permet de jouer au Shifumi
 
 Il s'agit d'un site qui m'a permis de revoir une partie de ce que je connaissais et ce que j'ai appris en moins d'une semaine en JavaScript. <br>
-Le site permet basiquement de jouer au jeu du Shifumi ou "Pierre Feuille Ciseau" et affiche son score et celui de l'ordinateur dynamiquement.<br>
-Pour le moment, le site reste très basique et utilise de la programmation fonctionnelle et impérative.
+Le site permet de jouer au jeu du Shifumi ou "Pierre Feuille Ciseau" et affiche son score et celui de l'ordinateur dynamiquement.<br>
 
 ## Langages utilisés
 - HTML
