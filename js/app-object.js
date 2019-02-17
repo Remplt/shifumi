@@ -85,7 +85,7 @@ var app = {
         }
     },
     // Affiche les choix des joueurs
-    phraseChoice: function(choixJoueur, choixOrdi){
+    sentenceChoice: function(choixJoueur, choixOrdi){
         console.log('lordi a choisi', choixOrdi, 'et le joueur', choixJoueur.target.id)
         var choixOrdi = app.conversionChoixOrdi(choixOrdi);
         var phraseChoix = document.getElementById('affichageChoix');
@@ -121,7 +121,7 @@ var app = {
     // Fonction qui lance le jeu
     play: function(event){
     var choixOrdi = app.botChoice();
-    app.phraseChoice(event, choixOrdi);
+    app.sentenceChoice(event, choixOrdi);
     app.whoWin(event, choixOrdi);
     },
 };
