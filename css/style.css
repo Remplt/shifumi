@@ -1,4 +1,4 @@
-body,
+/* body,
 html{
     display : flex;
     justify-content: center;
@@ -34,20 +34,20 @@ main p{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
+    /* margin-top: 3em;
+    margin-bottom: 3em; */
+/* }
 
 #monScore,
 #sonScore{
     display: inline-block;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
-    color: white;
+    color: white; 
     text-align: center;
-    /* width: 40%; */
+     width: 40%; 
     padding: 10px;
-}
+/* }
 
 #choix{
     text-align: center;
@@ -78,5 +78,10 @@ main p{
     padding: 5px;
     margin: auto;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer; 
+} */ 
+
+
+.not-active {
+    pointer-events: none;
 }

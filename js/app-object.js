@@ -54,9 +54,11 @@ var app = {
     whoWin: function(event, choixOrdi){
         var affichageGagnant = document.getElementById('gagnant');
         affichageGagnant.innerHTML = "";
+        affichageGagnant.className = '';
         var choixOrdi = app.conversionChoixOrdi(choixOrdi);
 
         if (event.target.id == choixOrdi){
+            affichageGagnant.className = 'col-4 offset-4 text-center alert alert-info text-uppercase pt-4 font-weight-bold';
             affichageGagnant.innerHTML = "<p id='egalite'> Egalité </p>"; 
         // Choix de l'user = Pierre
         } else if (event.target.id == 'pierre') {
@@ -89,6 +91,7 @@ var app = {
         console.log('lordi a choisi', choixOrdi, 'et le joueur', choixJoueur.target.id)
         var choixOrdi = app.conversionChoixOrdi(choixOrdi);
         var phraseChoix = document.getElementById('affichageChoix');
+        phraseChoix.className ='col-6 offset-3 text-center alert alert-info mt-5 pt-4 text-uppercase';
         phraseChoix.innerHTML = "<p>L'ordinateur a choisi <strong>" + choixOrdi + "</strong> et vous avez choisi <strong>" + choixJoueur.target.id +".</strong></p>";
     },
     // Converti le choix de l'ordi (int) en string
@@ -114,9 +117,11 @@ var app = {
         app.score = 0;
         // Comparaison des choix des joueurs effacés
         var phraseChoix = document.getElementById('affichageChoix');
+        phraseChoix.className = "";
         phraseChoix.innerHTML = " ";
         // Si egalité au moment du reset, effacé aussi
         document.getElementById('gagnant').innerHTML = "";
+        document.getElementById('gagnant').className = "";
     },
     // Fonction qui lance le jeu
     play: function(event){
