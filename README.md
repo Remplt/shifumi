@@ -9,7 +9,7 @@ Le site permet de jouer au jeu du Shifumi ou "Pierre Feuille Ciseau" et affiche 
 - JavaScript
 
 ## A faire
-- Nouveau design
+- ~~Nouveau design~~
 - Ajouter un tableau des scores des anciennes parties
 - Ajouter une limite de point a la partie
 - Améliorer le code
