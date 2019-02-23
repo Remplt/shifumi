@@ -85,3 +85,9 @@ main p{
 .not-active {
     pointer-events: none;
 }
+
+#pierre,
+#feuille,
+#ciseau{
+    color: #138496;
+}
